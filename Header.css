@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Grandstander', cursive;
+    line-height: 40px;
+
+}
+
+header {
+    padding-top: 15px;
+    font-size: 20px;
+    background-color:white;
+    color: rgb(238, 95, 1);
+}
+
+.Logo {
+    width: 150px;
+}
+
+.Head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(236, 121, 32);
+}
+
+li a {
+    display: inline-block;
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: rgb(246, 169, 76);
+}
+a:active {
+    background: pink;
+}
+
+.Bloco1 {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: rgb(255, 179, 121);
+}
+
