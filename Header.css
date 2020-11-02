@@ -10,6 +10,7 @@ header {
     width: 100%;
     font-size: 1.4em;
     color: rgb(238, 95, 1);
+    background-color: blue;
 }
 
 .Logo {
@@ -46,3 +47,20 @@ a:hover {
 a:active {
     background: pink;
 }
+
+.retangulo {
+    position: relative;
+    top: 9em;
+    background-color: red;
+    height: 70em;
+}
+
+footer {
+    position: relative;
+    padding: 5em 5em 3em 5em;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(247, 194, 130);
+    display: column;
+}
+
