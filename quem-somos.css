@@ -14,9 +14,8 @@ header {
 }
 
 .Logo {
-    height: 5em;
+    height: 4em;
 }
-
 
 #Head {
     display:flex;
@@ -32,10 +31,9 @@ ul {
     flex-wrap: wrap;
 }
 
-
 li a {
     color:rgb(238, 95, 1);
-    padding: 0.5em 3em 0.5em 3em;
+    padding: 0.5em 2em 0.5em 2em;
     text-decoration: none;
     font-size: 1em;
 }
@@ -48,4 +46,6 @@ a:active {
     background: pink;
 }
 
-
+.hero {
+    border: 1em solid green;
+}
