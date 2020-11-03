@@ -46,7 +46,7 @@ header a:active {
     background: pink;
 }
 
-#contato {
+#doações {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@ header a:active {
     background-color: rgb(255, 255, 255);
 }
 
-#contato #linha {
+#doações #linha {
     display: flex;
     width: 80%;
     justify-content: space-around;
@@ -63,12 +63,12 @@ header a:active {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-#contato i {
+#doações i {
     border-radius: 50%;
     font-size: 2.5em;
 }
 
-#contato .icon-wrapper {
+#doações .icon-wrapper {
     margin-right: 2em;
     width: 2em;
     height: 2em;
@@ -80,13 +80,13 @@ header a:active {
     border-radius: 50%;
 }
 
-#contato .icon-wrapper:hover {
+#doações .icon-wrapper:hover {
     transition: 0.3s;
     background-color: rgb(238, 95, 1);
     color: #fff;
 }
 
-.item {
+#doações .item {
     display: flex;
     align-items: center;
     padding: 1em 1.5em 1em 1.5em;
