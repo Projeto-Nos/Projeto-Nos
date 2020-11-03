@@ -38,35 +38,56 @@ li a {
     font-size: 1em;
 }
 
-a:hover {
+header a:hover {
     color: black;
     background-color: rgb(247, 194, 130);
 }
-a:active {
+header a:active {
     background: pink;
 }
 
 #contato {
     width: 100%;
+    display: flex;
+    justify-content: center;
     color:  rgb(238, 95, 1);
     background-color: rgb(255, 255, 255);
-    border: 1px solid green;
 }
 
-#linha {
+#contato #linha {
     display: flex;
+    width: 80%;
     justify-content: space-around;
     align-items: center;
+
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-.ícone {
-    font-size: 3em;
-    padding-right: 1em;
+#contato i {
+    border-radius: 50%;
+    font-size: 2.5em;
+}
+
+#contato .icon-wrapper {
+    margin-right: 2em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: rgb(238, 95, 1) solid;
+    border-radius: 50%;
+}
+
+#contato .icon-wrapper:hover {
+    transition: 0.3s;
+    background-color: rgb(238, 95, 1);
+    color: #fff;
 }
 
 .item {
     display: flex;
     align-items: center;
-    padding: 1em;
-    background-color: greenyellow;
+    padding: 1em 1.5em 1em 1.5em;
 }
