@@ -1,11 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
+    border: 0px;
     font-family: 'Grandstander', cursive;
 }
 
 header {
-    position: absolute;
     top: 0px;
     width: 100%;
     font-size: 1.4em;
@@ -46,6 +46,27 @@ a:active {
     background: pink;
 }
 
-.hero {
-    border: 1em solid green;
+#contato {
+    width: 100%;
+    color:  rgb(238, 95, 1);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid green;
+}
+
+#linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ícone {
+    font-size: 3em;
+    padding-right: 1em;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: greenyellow;
 }
