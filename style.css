@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Grandstander', cursive;
+}
+
+header {
+    top: 0px;
+    width: 100%;
+    font-size: 1.4em;
+    color: rgb(238, 95, 1);
+    background-color: white;
+}
+
+.Logo {
+    height: 4em;
+}
+
+#Head {
+    display:flex;
+    align-items: center;
+    padding-right: 3em;    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+li a {
+    color:rgb(238, 95, 1);
+    padding: 0.5em 2em 0.5em 2em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header a:hover {
+    color: black;
+    background-color: rgb(247, 194, 130);
+}
+header a:active {
+    background: pink;
+}
+
+#contato {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color:  rgb(238, 95, 1);
+    background-color: rgb(255, 255, 255);
+}
+
+#contato #linha {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contato i {
+    border-radius: 50%;
+    font-size: 2.5em;
+}
+
+#contato .icon-wrapper {
+    margin-right: 2em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: rgb(238, 95, 1) solid;
+    border-radius: 50%;
+}
+
+#contato .icon-wrapper:hover {
+    transition: 0.3s;
+    background-color: rgb(238, 95, 1);
+    color: #fff;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 1em 1.5em 1em 1.5em;
+}
