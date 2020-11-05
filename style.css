@@ -55,6 +55,7 @@ header a:active {
     justify-content: center;
     color:  rgb(238, 95, 1);
     background-color: rgb(255, 255, 255);
+    margin: 2em;
 }
 
 #doações #linha {
@@ -62,7 +63,7 @@ header a:active {
     width: 80%;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0.125em 1em rgba(0, 0, 0, 0.2);
 }
 
 #doações i {
@@ -126,3 +127,66 @@ header a:active {
     border-radius: 0.8em;
     background-color: rgba(238, 156, 55, 0.8);
 }
+
+#caixa-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#caixa-form form {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 3em 1em 3em;
+    box-shadow: 0px 0.125em 1em rgba(0, 0, 0, 0.2);
+}
+
+#caixa-form form input, #caixa-form form textarea {
+    min-width: 100%;
+    padding: 0.7em;
+    margin: 0.5em;
+    border-radius: 0.4em;
+}
+
+#caixa-form form input:focus, #caixa-form form textarea:focus {
+
+}
+
+#caixa-form form input::placeholder, #caixa-form form textarea::placeholder {
+    font-family: 'Grandstander', cursive;
+    color: rgb(238, 95, 1);
+    opacity: 1;
+}
+
+#caixa-form form input:-ms-input-placeholder, #caixa-form form textarea:-ms-input-placeholder {
+    font-family: 'Grandstander', cursive;
+    color: rgb(238, 95, 1);
+    opacity: 1;
+}
+
+#caixa-form form input::-ms-input-placeholder, #caixa-form form textarea::-ms-input-placeholder {
+    font-family: 'Grandstander', cursive;
+    color: rgb(238, 95, 1);
+    opacity: 1;
+}
+
+
+#caixa-form form textarea {
+    resize: none;
+    min-height: 15em;
+}
+
+#caixa-form form button {
+    min-width: 20%;
+    padding: 0.7em;
+    margin: 0.5em;
+    border-radius: 1em;
+    border: 0.15em solid rgb(238, 95, 1);
+    background-color: white;
+    color: rgb(238, 95, 1)
+    font-family: 'Grandstander', cursive;
+}
+
