@@ -1,0 +1,155 @@
+/*Parte do header*/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Grandstander', cursive;
+}
+
+
+header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    font-size: 1.4em;
+    color: rgb(238, 95, 1);
+    background-color: white;
+}
+
+header .Logo {
+    height: 5em;
+}
+
+
+header #Head {
+    display:flex;
+    align-items: center;
+    padding-right: 2em;    
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+header .menu1 li a {
+    color:rgb(238, 95, 1);
+    padding: 0.5em 3em 0.5em 3em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header .menu1 a:hover {
+    text-decoration: underline;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 37%;
+    max-width: 15em;
+    padding: 1em 0 1em 0;
+    z-index: 1;
+    background-color: rgba(244, 246, 247,0.95);
+    text-align: center;
+}
+
+header .dropdown-content a {
+    display: block;
+}
+
+header .menu1:hover .dropdown-content {
+    display: block;
+}
+
+/*Aqui começa a parte do body*/  
+
+.tela1{
+    background-color: rgb(246, 127, 23) ;
+    height: 30%;
+    width: 100%;
+    padding: 4em 0em 4em 0em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#texto1{
+    color: white;
+    width: 40%;
+    font-size: 1.3em;
+    text-indent: 1em;
+}
+#imagem1{
+    width: 40em;
+    border-radius: 0.5em;
+}
+
+.tela2{
+    background-color: rgb(255, 255, 255) ; 
+    padding: 4em 0em 6em 0em;
+    width: 100%;
+}
+#texto2{
+    color:  rgb(246, 127, 23);
+    padding: 0em;
+    font-size: 4em;
+    text-align: center;
+    text-indent: 1em;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.tela3{
+    background-color: rgb(137, 192, 231, 0.8);
+    height: 30%;
+    width: 100%;
+    padding: 4em 0em 4em 0em;
+}
+.tela3parcial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#texto3{
+    padding: 0em 1em 0em 2em;
+    color: black;
+    width: 50%;
+    font-size: 1.3em;
+    margin: 0em 4em 0em 2em;
+}
+#titulotela3{
+    margin: 0em 0em 1em 1em;
+}
+#imagem3{
+    width: 90%;
+    border-radius: 0.5em;
+}
+button{
+    padding: 1em;
+    background-color: rgb(137, 192, 231, 1);
+    border-radius: 1em;
+    border-color:rgb(137, 192, 231, 1);
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(137, 192, 231, 1);
+    border-color:rgb(137, 192, 231, 1);
+}
+.botao{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}

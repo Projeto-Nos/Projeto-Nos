@@ -161,3 +161,11 @@ header .menu1:hover .dropdown-content {
 .container img {
     height: 100%;
 }
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
