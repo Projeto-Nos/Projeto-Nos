@@ -9,7 +9,7 @@ header {
     position: absolute;
     top: 0px;
     width: 100%;
-    font-size: 1.4em;
+    font-size: 1em;
     color: rgb(238, 95, 1);
     background-color: white;
 }
@@ -22,7 +22,7 @@ header .Logo {
 header #Head {
     display:flex;
     align-items: center;
-    padding-right: 2em;    
+    padding-right: 1em;    
 }
 
 header ul {
