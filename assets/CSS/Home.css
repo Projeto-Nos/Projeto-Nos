@@ -23,7 +23,7 @@ header .Logo {
 header #Head {
     display:flex;
     align-items: center;
-    padding-right: 2em;    
+    padding-right: 1em;    
 }
 
 header ul {
