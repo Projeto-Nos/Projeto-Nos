@@ -2,6 +2,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    border: 0px;
     font-family: 'Grandstander', cursive;
 }
 
@@ -10,27 +11,25 @@ header {
     left:0px;
     top: 0px;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: rgb(238, 95, 1);
     background-color: white;
 }
 
 header .Logo {
     height: 5em;
+    position: absolute;
+    left: 2em;
 }
 
-
-header #Head {
-    display:flex;
-    align-items: center;
-    padding-right: 1em;    
-}
 
 header ul {
     list-style-type: none;
+    position: relative;
+    left: 6em;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -71,7 +70,7 @@ header .menu1:hover .dropdown-content {
 .Titulo {
     font-size: 25px;
     position: relative;
-    top: 3em;
+    top: 0em;
     text-align: center;
     background-color: rgb(181, 224, 255);
     padding: 1em;
@@ -83,7 +82,7 @@ header .menu1:hover .dropdown-content {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: 4em;
+    top: -2px;
     right: 0px;
     height: 16em;
     padding: 100px 100px 0px 0px;
@@ -134,7 +133,7 @@ header .menu1:hover .dropdown-content {
   width: 13px;
   height: 0;
   padding-top: 13px;
-  background-image: url(assets/images/pagination.png);
+  background-image: url(/assets/images/pagination.png);
   background-position: 0 0;
   float: left;
   overflow: hidden;
