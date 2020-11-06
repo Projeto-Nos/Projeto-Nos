@@ -71,7 +71,7 @@ header .menu1:hover .dropdown-content {
 .Titulo {
     font-size: 25px;
     position: relative;
-    top: 4em;
+    top: 3em;
     text-align: center;
     background-color: rgb(181, 224, 255);
     padding: 1em;
@@ -83,7 +83,7 @@ header .menu1:hover .dropdown-content {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: 5em;
+    top: 4em;
     right: 0px;
     height: 16em;
     padding: 100px 100px 0px 0px;
