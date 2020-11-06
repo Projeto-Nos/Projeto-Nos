@@ -1,0 +1,163 @@
+/* HEADER */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Grandstander', cursive;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    font-size: 1.4em;
+    color: rgb(238, 95, 1);
+    background-color: white;
+}
+
+header .Logo {
+    height: 5em;
+}
+
+
+header #Head {
+    display:flex;
+    align-items: center;
+    padding-right: 2em;    
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+header .menu1 li a {
+    color:rgb(238, 95, 1);
+    padding: 0.5em 3em 0.5em 3em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header .menu1 a:hover {
+    text-decoration: underline;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 37%;
+    max-width: 15em;
+    padding: 1em 0 1em 0;
+    z-index: 1;
+    background-color: rgba(244, 246, 247,0.95);
+    text-align: center;
+}
+
+header .dropdown-content a {
+    display: block;
+}
+
+header .menu1:hover .dropdown-content {
+    display: block;
+}
+
+/*  Começa o código das página */
+
+/* Título da página */
+.Titulo {
+    font-size: 25px;
+    position: relative;
+    top: 5em;
+    text-align: center;
+    background-color: rgb(181, 224, 255);
+    padding: 1em;
+}
+  
+
+/* Descrição das campanhas cesta em casa */
+.Bloco {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 5em;
+    right: 0px;
+    height: 16em;
+    padding: 100px 100px 0px 0px;
+    background-color: rgb(246, 127, 23);
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 2em;
+    z-index: -20;
+    color: white;
+}
+
+.Texto {
+    display: flex;
+    width: 50%;
+}
+
+.Azul {
+    background-color: cornflowerblue;  
+}
+.Amarelo {
+    background-color: rgb(254, 202, 18);
+}
+
+/* Sliders de fotos */
+
+#slides,
+#slides2,
+#slides3,
+#slides4 {
+  display: none;
+  margin-bottom:90px;
+  padding-bottom: 20px;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: left;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+
+.container {
+    justify-content: space-around;
+    position: absolute;
+    top: 16em;
+    padding-left: 2em;
+    width: 500px;
+    height: 900px;
+}
+
+.container img {
+    height: 100%;
+}

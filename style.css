@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    position: absolute;
     top: 0px;
     width: 100%;
     font-size: 1.4em;
@@ -16,17 +17,18 @@ header {
     background-color: white;
 }
 
-.Logo {
-    height: 4em;
+header .Logo {
+    height: 5em;
 }
 
-#Head {
+
+header #Head {
     display:flex;
     align-items: center;
-    padding-right: 3em;    
+    padding-right: 2em;    
 }
 
-ul {
+header ul {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -34,19 +36,35 @@ ul {
     flex-wrap: wrap;
 }
 
-li a {
+
+header .menu1 li a {
     color:rgb(238, 95, 1);
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0.5em 3em 0.5em 3em;
     text-decoration: none;
     font-size: 1em;
 }
 
-header a:hover {
-    color: black;
-    background-color: rgb(247, 194, 130);
+header .menu1 a:hover {
+    text-decoration: underline;
 }
-header a:active {
-    background: pink;
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 37%;
+    max-width: 15em;
+    padding: 1em 0 1em 0;
+    z-index: 1;
+    background-color: rgba(244, 246, 247,0.95);
+    text-align: center;
+}
+
+header .dropdown-content a {
+    display: block;
+}
+
+header .menu1:hover .dropdown-content {
+    display: block;
 }
 
 #doações {
