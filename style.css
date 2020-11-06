@@ -151,9 +151,11 @@ header a:active {
     border-radius: 0.4em;
 }
 
+/*
 #caixa-form form input:focus, #caixa-form form textarea:focus {
-
+    
 }
+*/
 
 #caixa-form form input::placeholder, #caixa-form form textarea::placeholder {
     font-family: 'Grandstander', cursive;
@@ -186,7 +188,14 @@ header a:active {
     border-radius: 1em;
     border: 0.15em solid rgb(238, 95, 1);
     background-color: white;
-    color: rgb(238, 95, 1)
+    color: rgb(238, 95, 1);
     font-family: 'Grandstander', cursive;
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
