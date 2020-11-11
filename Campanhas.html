@@ -9,6 +9,7 @@
 
   <!-- End CSS for slidesjs.com example -->
 </head>
+<body>
 
   <header> 
     <nav> 
@@ -29,8 +30,6 @@
     </nav>
   </header>
 
-  <body>
-
   <h2 class="Titulo"> Conheça nossas ações e campanhas!</h2>
     
   <div class="Bloco"> 
@@ -43,7 +42,11 @@
   </div>
 
   <div class="Bloco Azul"> 
-      <div class="Texto"> <p> <strong> Ações para pessoas em situação de rua:</strong> A partir do Projeto-Nós, são realizadas uma série de ações e multirões de alimentação temáticos       para pessoas que vivem em situação de rua </p></div>
+      <div class="Texto">
+        <p>
+          <strong> Ações para pessoas em situação de rua:</strong> A partir do Projeto-Nós, são realizadas uma série de ações e multirões de alimentação temáticos       para pessoas que vivem em situação de rua
+        </p>
+      </div>
   </div> 
 
   <div class="Bloco Amarelo"> 
@@ -85,38 +88,35 @@
         <img src="assets/images/Foto34.jpg" alt="Photo">
     </div>
   </div>
-
-
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="assets/js/jquery.slides.min.js"></script>
-
-    <script>
-      $(function() {
-        $('#slides').slidesjs({
-          width: 940,
-          height: 528,
-          navigation: false
-        });
-
-        $('#slides2').slidesjs({
-          width: 940,
-          height: 528,
-          navigation: false
-        });
-
-        $('#slides3').slidesjs({
-          width: 940,
-          height: 528,
-          navigation: false
-        });
-
-        $('#slides4').slidesjs({
-          width: 940,
-          height: 528,
-          navigation: false
-        });
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="assets/js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
       });
-    </script>
-    <!-- End SlidesJS Required -->
+
+      $('#slides2').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+
+      $('#slides3').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+
+      $('#slides4').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
 </body>
 </html>
