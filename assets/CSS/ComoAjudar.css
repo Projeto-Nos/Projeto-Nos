@@ -67,6 +67,8 @@ header .menu1:hover .dropdown-content {
     display: block;
 }
 
+/*Aqui começa a parte do body*/  
+
 #doações {
     width: 100%;
     display: flex;
