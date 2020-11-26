@@ -47,8 +47,8 @@ body {
 }
 
 .menu ul li a:hover {
-    color: black;
-    background-color: rgb(247, 194, 130);
+
+    text-decoration: underline;
 }
 
 .menu ul li ul {
@@ -72,11 +72,6 @@ body {
     font-size: 1.4em;
     padding: 14px 14px;
  }
-
- .menu ul li ul li a:hover {
-    background-color:  rgb(247, 194, 130);
-}
-
 
 /*Aqui começa a parte do body*/  
 
@@ -166,3 +161,4 @@ footer {
     justify-content: center;
     border: 1px solid red;
 }
+
