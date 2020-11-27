@@ -17,13 +17,13 @@ body {
     color: rgb(238, 95, 1);
     font-size: 2em;
     float: left;
-    padding: 0 2em 0 0;
+    padding: 0 1em 0 0;
 }
 
 #logo-menu {
     width: 100px;
     float: left;
-    padding: 0em 1em 0em 4em;
+    padding: 0em 1em 0em 3em;
 }
 
 /*Fomratação Menu*/
@@ -73,7 +73,10 @@ body {
     padding: 14px 14px;
  }
 
-
+ .menu ul {
+     padding: 0 0 0 1em;
+ }
+ 
  /*Footer*/
  
  footer {
