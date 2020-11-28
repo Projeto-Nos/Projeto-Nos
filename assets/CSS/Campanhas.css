@@ -1,4 +1,5 @@
 /* HEADER */
+
 body {
     margin: 0px;
     padding: 0px;
@@ -6,176 +7,169 @@ body {
     font-family: 'Grandstander', cursive;
 }
 
-/*Fomratação da nav*/
-.menu {
+header {
+    position: relative;
+    left:0px;
+    top: 0px;
     width: 100%;
-    height: 150px;
+    font-size: 1.3em;
+    color: rgb(238, 95, 1);
     background-color: white;
+}
+
+header .Logo {
+    height: 5em;
+    position: absolute;
+    left: 2em;
+}
+
+
+header ul {
+    list-style-type: none;
+    position: relative;
+    left: 6em;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-/*Formatação do logo*/
-.menu h1 {
-    color: rgb(238, 95, 1);
-    font-size: 2em;
-    float: left;
-    padding: 0 1em 0 0;
-}
 
-#logo-menu {
-    width: 100px;
-    float: left;
-    padding: 0em 1em 0em 3em;
-}
-
-/*Fomratação Menu*/
-
-.menu ul {
-    float: left;
-}
-
-.menu ul li {
-    float: left;
-    list-style: none;
-    position: relative;
-}
-
-.menu ul li a {
-    display: block;
-    color: rgb(238, 95, 1);
-    font-size: 1.5em;
-    padding: 0.5em 2em 0.5em 2em;
+header .menu1 li a {
+    color:rgb(238, 95, 1);
+    padding: 0.5em 3em 0.5em 3em;
     text-decoration: none;
+    font-size: 1em;
 }
 
-.menu ul li a:hover {
-
+header .menu1 a:hover {
     text-decoration: underline;
 }
 
-.menu ul li ul {
+header .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
-    padding: 5px 30px;
-    border-radius: 0px 0px 4px 4px;
+    left: 37%;
+    max-width: 15em;
+    padding: 1em 0 1em 0;
+    z-index: 1;
+    background-color: rgba(244, 246, 247,0.95);
+    text-align: center;
 }
 
-.menu ul li:hover ul {
+header .dropdown-content a {
     display: block;
 }
 
-.menu ul li ul li {
-   width: 180px;
-   border-radius: 4px;
+header .menu1:hover .dropdown-content {
+    display: block;
 }
 
-.menu ul li ul li a {
-    font-size: 1.4em;
-    padding: 14px 14px;
- }
-
- .menu ul {
-     padding: 0 0 0 1em;
- }
-
-/*  Começa o código das página */
-
-/* Título da página */
-.Titulo {
-    font-size: 25px;
-    position: relative;
-    top: 0em;
-    text-align: center;
-    background-color: rgb(181, 224, 255);
-    padding: 1em;
-}
-  
-
-/* Descrição das campanhas cesta em casa */
-.Bloco {
+.card_container {
     display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: -2px;
-    right: 0px;
-    height: 16em;
-    padding: 100px 100px 0px 0px;
-    background-color: rgb(246, 127, 23);
-    font-size: 1.2em;
-    text-align: justify;
-    line-height: 2em;
-    z-index: -20;
-    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0em;
 }
 
-.Texto {
+.card {
     display: flex;
-    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4em;
+    width: 80%;
 }
 
-.Azul {
-    background-color: cornflowerblue;  
-}
-.Amarelo {
-    background-color: rgb(254, 202, 18);
-}
-
-/* Sliders de fotos */
-
-#slides,
-#slides2,
-#slides3,
-#slides4 {
-  display: none;
-  margin-bottom:90px;
-  padding-bottom: 20px;
+.laranja {
+    color: rgb(238, 95, 1);
+    border: 0.1em solid;
+    border-color: rgb(238, 95, 1);
+    box-shadow: 0em 0em 1.25em rgba(238, 95, 1, 1);
 }
 
-.slidesjs-pagination {
-  margin: 6px 0 0;
-  float: left;
-  list-style: none;
+.azul {
+    color: rgb(128, 128, 255);
+    border: 0.1em solid;
+    border-color: rgb(128, 128, 255);
+    box-shadow: 0em 0em 1.25em rgba(128, 128, 255, 1);
 }
 
-.slidesjs-pagination li {
-  float: left;
-  margin: 0 1px;
+.amarelo {
+    color: rgb(179, 155, 14);
+    border: 0.1em solid;
+    border-color: rgb(179, 155, 14);
+    box-shadow: 0em 0em 1.25em rgba(179, 155, 14, 1);
 }
 
-.slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(assets/images/pagination.png);
-  background-position: 0 0;
-  float: left;
-  overflow: hidden;
-}
-
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px
-}
-
-.slidesjs-pagination li a:hover {
-  background-position: 0 -26px
-}
-
-
-.container {
+.card .midia_texto {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
-    position: absolute;
-    top: 16em;
-    padding-left: 2em;
-    width: 500px;
-    height: 900px;
 }
 
-.container img {
-    height: 100%;
+.card h2 {
+    font-size: 2.6em;
+    padding: 0.7em 0.2em 0em 0;
+    margin: 0;
+    color: black;
+}
+
+.card .midia_texto img {
+    border-radius: 0 4em;
+    width: 27%;
+}
+
+.card .midia_texto p {
+    width: 60%;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    color: black;
+}
+
+.card .saiba_mais button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-color: white;
+    border: none;
+    padding: 0;
+}
+
+.card .saiba_mais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.card .saiba_mais:hover p {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.8em;
+    transition: 0.5s;
+}
+
+.card .saiba_mais:hover i {
+    font-size: 5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.card .saiba_mais p {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.card .saiba_mais i {
+    font-size: 4em;
 }
 
 footer {
@@ -183,5 +177,4 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
