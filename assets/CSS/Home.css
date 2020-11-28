@@ -1,71 +1,82 @@
 /*Parte do header*/
 body {
-    margin: 0px;
-    padding: 0px;
     font-family: 'Grandstander', cursive;
 }
 
-
-header {
-    position: relative;
-    left: 0px;
-    top: 0px;
+/*Fomratação da nav*/
+.menu {
     width: 100%;
-    font-size: 1.2em;
-    color: rgb(238, 95, 1);
+    height: 150px;
     background-color: white;
-}
-
-header .Logo {
-    height: 5em;
-}
-
-
-header #Head {
-    display:flex;
-    align-items: center;
-    padding-right: 1em;    
-}
-
-header ul {
-    list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
 }
 
+/*Formatação do logo*/
+.menu h1 {
+    color: rgb(238, 95, 1);
+    font-size: 2em;
+    float: left;
+    padding: 0 1em 0 0;
+}
 
-header .menu1 li a {
-    color:rgb(238, 95, 1);
-    padding: 0.5em 3em 0.5em 3em;
+#logo-menu {
+    width: 100px;
+    float: left;
+    padding: 0em 1em 0em 3em;
+}
+
+/*Fomratação Menu*/
+
+.menu ul {
+    float: left;
+}
+
+.menu ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    color: rgb(238, 95, 1);
+    font-size: 1.5em;
+    padding: 0.5em 2em 0.5em 2em;
     text-decoration: none;
-    font-size: 1em;
 }
 
-header .menu1 a:hover {
+.menu ul li a:hover {
+
     text-decoration: underline;
 }
 
-header .dropdown-content {
+.menu ul li ul {
     display: none;
     position: absolute;
-    left: 37%;
-    max-width: 15em;
-    padding: 1em 0 1em 0;
-    z-index: 1;
-    background-color: rgba(244, 246, 247,0.95);
-    text-align: center;
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 0px 0px 4px 4px;
 }
 
-header .dropdown-content a {
+.menu ul li:hover ul {
     display: block;
 }
 
-header .menu1:hover .dropdown-content {
-    display: block;
+.menu ul li ul li {
+   width: 180px;
+   border-radius: 4px;
 }
 
+.menu ul li ul li a {
+    font-size: 1.4em;
+    padding: 14px 14px;
+ }
+
+ .menu ul {
+     padding: 0 0 0 1em;
+ }
+ 
 /*Aqui começa a parte do body*/  
 
 .tela1{
@@ -154,3 +165,4 @@ footer {
     justify-content: center;
     border: 1px solid red;
 }
+

@@ -1,0 +1,88 @@
+/*Parte do header*/
+body {
+    font-family: 'Grandstander', cursive;
+}
+
+/*Fomratação da nav*/
+.menu {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+/*Formatação do logo*/
+.menu h1 {
+    color: rgb(238, 95, 1);
+    font-size: 2em;
+    float: left;
+    padding: 0 1em 0 0;
+}
+
+#logo-menu {
+    width: 100px;
+    float: left;
+    padding: 0em 1em 0em 3em;
+}
+
+/*Fomratação Menu*/
+
+.menu ul {
+    float: left;
+}
+
+.menu ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    color: rgb(238, 95, 1);
+    font-size: 1.5em;
+    padding: 0.5em 2em 0.5em 2em;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+
+    text-decoration: underline;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li ul li {
+   width: 180px;
+   border-radius: 4px;
+}
+
+.menu ul li ul li a {
+    font-size: 1.4em;
+    padding: 14px 14px;
+ }
+
+ .menu ul {
+     padding: 0 0 0 1em;
+ }
+ 
+ /*Footer*/
+ 
+ footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
