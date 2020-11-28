@@ -1,6 +1,9 @@
 /*Parte do header*/
 body {
     font-family: 'Grandstander', cursive;
+    background-image: url(assets/images/LogoNósMenu.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 div#interface {
