@@ -1,20 +1,35 @@
 /*Parte do header*/
 body {
     font-family: 'Grandstander', cursive;
+    background-color: rgb(137, 192, 231, 1);
 }
 
-/*Fomratação da nav*/
+div#interface {
+    width: 1300px;
+    margin: auto;
+}
+
+/*Formatação da nav*/
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 .menu {
     width: 100%;
-    height: 150px;
-    background-color: white;
+    height: 100px;
+    background-color:white;
     display: flex;
     align-items: center;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
 
 /*Formatação do logo*/
 .menu h1 {
-    color: rgb(238, 95, 1);
+    color:rgb(238, 95, 1);
     font-size: 2em;
     float: left;
     padding: 0 1em 0 0;
@@ -23,7 +38,7 @@ body {
 #logo-menu {
     width: 100px;
     float: left;
-    padding: 0em 1em 0em 3em;
+    padding: 0em 1em 0em 6em;
 }
 
 /*Fomratação Menu*/
@@ -42,7 +57,8 @@ body {
     display: block;
     color: rgb(238, 95, 1);
     font-size: 1.5em;
-    padding: 0.5em 2em 0.5em 2em;
+    font-weight: bold;
+    padding: 0.5em 2em 0.5em 6em;
     text-decoration: none;
 }
 
@@ -51,27 +67,9 @@ body {
     text-decoration: underline;
 }
 
-.menu ul li ul {
-    display: none;
-    position: absolute;
-    background-color: white;
-    padding: 5px 30px;
-    border-radius: 0px 0px 4px 4px;
-}
-
 .menu ul li:hover ul {
     display: block;
 }
-
-.menu ul li ul li {
-   width: 180px;
-   border-radius: 4px;
-}
-
-.menu ul li ul li a {
-    font-size: 1.4em;
-    padding: 14px 14px;
- }
 
  .menu ul {
      padding: 0 0 0 1em;
@@ -79,50 +77,15 @@ body {
  
 /*Aqui começa a parte do body*/  
 
-.tela1{
-    background-color: rgb(246, 127, 23) ;
+/*Parte da Campanha atual*/
+.Campanha-atual{
+    background-color:white;
     height: 30%;
     width: 100%;
     padding: 4em 0em 4em 0em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-top: 6em;
 }
-#texto1{
-    color: white;
-    width: 40%;
-    font-size: 1.3em;
-    text-indent: 1em;
-}
-#imagem1{
-    width: 40em;
-    border-radius: 0.5em;
-}
-
-.tela2{
-    background-color: rgb(255, 255, 255) ; 
-    padding: 4em 0em 6em 0em;
-    width: 100%;
-}
-#texto2{
-    color:  rgb(246, 127, 23);
-    padding: 0em;
-    font-size: 4em;
-    text-align: center;
-    text-indent: 1em;
-}
-.video{
-    display: flex;
-    justify-content: center;
-}
-
-.tela3{
-    background-color: rgb(137, 192, 231, 0.8);
-    height: 30%;
-    width: 100%;
-    padding: 4em 0em 4em 0em;
-}
-.tela3parcial{
+.Campanha-atual-texto{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -133,16 +96,18 @@ body {
     width: 50%;
     font-size: 1.3em;
     margin: 0em 4em 0em 2em;
+    text-align: justify;
+    text-indent: 2em;
 }
-#titulotela3{
+#Campanha-atual-titulo{
     margin: 0em 0em 1em 1em;
 }
-#imagem3{
+#Campanha-atual-imagem{
     width: 90%;
     border-radius: 0.5em;
 }
 button{
-    padding: 1em;
+    font-size: 1.5em;
     background-color: rgb(137, 192, 231, 1);
     border-radius: 1em;
     border-color:rgb(137, 192, 231, 1);
@@ -153,16 +118,75 @@ button:hover{
     color: rgb(137, 192, 231, 1);
     border-color:rgb(137, 192, 231, 1);
 }
-.botao{
+.Campanha-atual-botao{
     display: flex;
     justify-content: space-evenly;
 }
+
+/*Frase da ONG*/
+.Frase-do-Projeto{
+    background-color: white; 
+    padding: 4em 0em 6em 0em;
+    width: 100%;
+}
+#Frase-ProjetoNos{
+    color:  rgb(246, 127, 23);
+    padding: 0em;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+#Autor-da-Frase {
+    font-size: 2.5em;
+    color:  rgb(246, 127, 23);
+    text-align: end;
+    padding: 0em 2.7em 0em 0em;
+    margin-top: 0em;
+    margin-bottom: 4em;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+/*Quem Somos*/
+.Quem-somos{
+    background-color:white;
+    height: 30%;
+    width: 100%;
+    padding: 4em 0em 4em 0em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Quem-somos-texto{
+    color: black;
+    width: 40%;
+    font-size: 1.3em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+#Quem-somos-titulo {
+    text-indent: -0.6em;
+}
+
+#Quem-somos-imagem{
+    width: 40em;
+    border-radius: 0.5em;
+}
+
 
 footer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    border-top: 2px solid black;
+    margin-top: 5em;
+    background-color: white;
+    height: 150px;
 }
 
