@@ -5,72 +5,87 @@ body {
     padding: 0px;
     border: 0px;
     font-family: 'Grandstander', cursive;
+    background-color: rgb(137, 192, 231, 1);
 }
 
-header {
-    position: relative;
-    left:0px;
-    top: 0px;
-    width: 100%;
-    font-size: 1.3em;
-    color: rgb(238, 95, 1);
+div #interface {
+    width: 1300px;
+    margin: auto;
     background-color: white;
 }
 
-header .Logo {
-    height: 5em;
-    position: absolute;
-    left: 2em;
+/*Formatação da nav*/
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
-
-header ul {
-    list-style-type: none;
-    position: relative;
-    left: 6em;
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color:white;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
 
-
-header .menu1 li a {
+/*Formatação do logo*/
+.menu h1 {
     color:rgb(238, 95, 1);
-    padding: 0.5em 3em 0.5em 3em;
-    text-decoration: none;
-    font-size: 1em;
+    font-size: 2em;
+    float: left;
+    padding: 0 1em 0 0;
 }
 
-header .menu1 a:hover {
+#logo-menu {
+    width: 100px;
+    float: left;
+    padding: 0em 1em 0em 6em;
+}
+
+/*Fomratação Menu*/
+
+.menu ul {
+    float: left;
+}
+
+.menu ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    color: rgb(238, 95, 1);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em 2em 0.5em 6em;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
     text-decoration: underline;
 }
 
-header .dropdown-content {
-    display: none;
-    position: absolute;
-    left: 37%;
-    max-width: 15em;
-    padding: 1em 0 1em 0;
-    z-index: 1;
-    background-color: rgba(244, 246, 247,0.95);
-    text-align: center;
-}
-
-header .dropdown-content a {
+.menu ul li:hover ul {
     display: block;
 }
 
-header .menu1:hover .dropdown-content {
-    display: block;
-}
+ .menu ul {
+     padding: 0 0 0 1em;
+ }
 
+ /*Aqui começa a interface*/
 .card_container {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 2em 0em;
+    margin: 6.8em 0em;
 }
 
 .card {
@@ -87,6 +102,7 @@ header .menu1:hover .dropdown-content {
     border: 0.1em solid;
     border-color: rgb(238, 95, 1);
     box-shadow: 0em 0em 1.25em rgba(238, 95, 1, 1);
+    margin-top: 4em;
 }
 
 .azul {
@@ -101,6 +117,7 @@ header .menu1:hover .dropdown-content {
     border: 0.1em solid;
     border-color: rgb(179, 155, 14);
     box-shadow: 0em 0em 1.25em rgba(179, 155, 14, 1);
+    margin-bottom: 4em;
 }
 
 .card .midia_texto {
@@ -177,4 +194,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 2px solid black;
+    margin-top: 5em;
+    background-color: white;
+    height: 150px;
 }
