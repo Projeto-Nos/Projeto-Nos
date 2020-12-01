@@ -8,7 +8,7 @@ body {
     background-color: rgb(137, 192, 231, 1);
 }
 
-div#interface {
+div #interface {
     width: 1300px;
     margin: auto;
     background-color: white;
