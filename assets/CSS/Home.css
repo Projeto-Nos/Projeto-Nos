@@ -1,9 +1,6 @@
 /*Parte do header*/
 body {
     font-family: 'Grandstander', cursive;
-    background-image: url(assets/images/LogoNósMenu.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
 }
 
 div#interface {
@@ -40,7 +37,7 @@ header {
 #logo-menu {
     width: 100px;
     float: left;
-    padding: 0em 1em 0em 3em;
+    padding: 0em 1em 0em 6em;
 }
 
 /*Fomratação Menu*/
