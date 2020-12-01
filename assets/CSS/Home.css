@@ -83,7 +83,7 @@ header {
     height: 30%;
     width: 100%;
     padding: 4em 0em 4em 0em;
-    margin-top: 12em;
+    margin-top: 6em;
 }
 .Campanha-atual-texto{
     display: flex;
@@ -96,6 +96,8 @@ header {
     width: 50%;
     font-size: 1.3em;
     margin: 0em 4em 0em 2em;
+    text-align: justify;
+    text-indent: 2em;
 }
 #Campanha-atual-titulo{
     margin: 0em 0em 1em 1em;
@@ -164,7 +166,13 @@ button:hover{
     width: 40%;
     font-size: 1.3em;
     text-align: justify;
+    text-indent: 2em;
 }
+
+#Quem-somos-titulo {
+    text-indent: -0.6em;
+}
+
 #Quem-somos-imagem{
     width: 40em;
     border-radius: 0.5em;
