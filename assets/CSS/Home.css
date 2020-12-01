@@ -58,7 +58,7 @@ header {
     color: rgb(238, 95, 1);
     font-size: 1.5em;
     font-weight: bold;
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0.5em 2em 0.5em 6em;
     text-decoration: none;
 }
 
@@ -67,27 +67,9 @@ header {
     text-decoration: underline;
 }
 
-.menu ul li ul {
-    display: none;
-    position: absolute;
-    background-color: white;
-    padding: 5px 30px;
-    border-radius: 0px 0px 4px 4px;
-}
-
 .menu ul li:hover ul {
     display: block;
 }
-
-.menu ul li ul li {
-   width: 180px;
-   border-radius: 4px;
-}
-
-.menu ul li ul li a {
-    font-size: 1.4em;
-    padding: 14px 14px;
- }
 
  .menu ul {
      padding: 0 0 0 1em;
