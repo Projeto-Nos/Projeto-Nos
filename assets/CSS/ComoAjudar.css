@@ -14,6 +14,16 @@ div#interface {
     margin: auto;
     background-color: white;
 }
+/*Parte do header*/
+body {
+    font-family: 'Grandstander', cursive;
+    background-color: rgb(137, 192, 231, 1);
+}
+
+div#interface {
+    width: 1300px;
+    margin: auto;
+}
 
 /*Formatação da nav*/
 header {
@@ -38,7 +48,7 @@ header {
     color:rgb(238, 95, 1);
     font-size: 2em;
     float: left;
-    padding: 0 1em 0 0;
+    padding: 0 3em 0 0;
 }
 
 #logo-menu {
@@ -64,7 +74,7 @@ header {
     color: rgb(238, 95, 1);
     font-size: 1.5em;
     font-weight: bold;
-    padding: 0.5em 2em 0.5em 6em;
+    padding: 0.5em 2em 0.5em 3em;
     text-decoration: none;
 }
 
