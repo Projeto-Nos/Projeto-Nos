@@ -44,9 +44,7 @@
                 <p>
                     A Campanha da Cesta em Casa é destinada a ajudar as famílias que estão em situação de vulnerabilidade financeira e social, nosso objetivo é de conseguir levar a esperança de dias melhores para essas pessoas.
                     <br><br>
-                    Nessa campanha são entreges cestas básicas e leite para as famílias.
-                    <br><br>
-                    Todas essas famílias são triadas e cadastradas no projeto.
+                    Todas essas famílias são triadas e cadastradas no nosso projeto, essas pessoas recebem cestas básicas e leite. Atualmente temos mais de 70 famílias cadastradas na campanha e mais de 180 cestas já distribuídas.
                 </p>
             </div>
 
@@ -62,11 +60,6 @@
                         <img src='assets/images/galeria_1_5.jpg'>
                         <img src='assets/images/galeria_1_6.jpg'>
                     </div>
-                    <div class='linha'>
-                        <img src='assets/images/Cesta_Hero.jpg'>
-                        <img src='assets/images/Cesta_Hero.jpg'>
-                        <img src='assets/images/Cesta_Hero.jpg'>
-                    </div>  
                 </div>
             </div>
             
@@ -79,16 +72,32 @@
 
     <div class="card_container">
         <div class="card azul">
-            <h2 id='azul'> Campanha de Natal </h2>
+            <h2 id='azul'>Campanha de Natal: Acredite em um natal para todos</h2>
+            <br>
             <div class="midia_texto">
-                <img src='assets/images/Natal_Hero.jpg'>
+                <img src='assets/images/Natal_Hero.jpeg'>
                 <p>
-                    Nulla dolor risus, viverra hendrerit mattis quis, maximus vel diam. Morbi eget pulvinar dui, eu commodo urna. Curabitur cursus sit amet eros quis aliquam. Donec eu mauris elit. Sed at purus molestie, pretium nibh fermentum, sagittis ipsum. Mauris convallis leo eget erat maximus, a bibendum orci elementum. Duis eros eros, venenatis vitae egestas ut, hendrerit sit amet enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sed nibh ut massa placerat rutrum. Fusce at ex ornare, sollicitudin libero convallis, efficitur erat. Ut a scelerisque nibh. Nulla finibus tincidunt rutrum. Donec bibendum arcu ut nibh convallis ultrices. Nam semper, orci ut pellentesque consequat, est mauris lacinia tortor, id posuere nunc nulla in mi. Fusce porttitor tortor sapien. Sed ac augue id magna laoreet condimentum.
+                    A campanha foi dividida em duas etapas para consolidar sua realização:
+                    <br><br>
+                    Na primeira, as famílias que estão cadastradas em situação de vulnerabilidade econômica e social receberam uma cesta básica especial de Natal, para as crianças nós fizemos o apadrinhamento das cartas, para que essas crianças ganhassem o seu sonho de Natal.
+                    <br><br>
+                    A segunda etapa teve seu foco em ajudar as pessoas em situação de rua, distribuímos então 60 Kits de Natal contendo: Marmita, água - refrigerante, saquinho de balas, mini chocotone e torrone.
                 </p>
             </div>
-            <div class="saiba_mais" onclick="">
-                <p> Saiba mais </p>
-                <i class="fas fa-chevron-down"></i>
+
+            <div id="galeria_2">
+                <div class="galeria">
+                    <div class="linha">
+                        <img src='assets/images/galeria_2_1.jpeg'>
+                        <img src='assets/images/galeria_2_2.jpeg'>
+                        <img src='assets/images/galeria_2_3.jpeg'>
+                    </div>
+                </div>
+            </div>
+
+            <div class="saiba_mais" onclick="show_more_2()">
+                <p id='botao_2'> Mostrar mais </p>
+                <i id='seta_2' class="fas fa-chevron-down"></i>
             </div>
         </div>
     </div>
@@ -102,9 +111,24 @@
                     Ut accumsan vehicula pulvinar. Aliquam lobortis, enim quis fringilla posuere, urna enim luctus dolor, ac pellentesque enim nunc vitae tellus. Nullam imperdiet, ex a varius mattis, massa quam posuere tortor, et faucibus orci leo eget risus. Donec nisl ex, pharetra a commodo a, porta sed neque. In hac habitasse platea dictumst. Fusce sollicitudin erat rhoncus ultrices pretium. Phasellus ut iaculis enim.
                 </p>
             </div>
-            <div class="saiba_mais" onclick="">
-                <p> Saiba mais </p>
-                <i class="fas fa-chevron-down"></i>
+
+            <div id="galeria_3">
+                <div class="galeria">
+                    <div class="linha">
+                        <img src='assets/images/galeria_3_1.jpg'>
+                        <img src='assets/images/galeria_3_2.jpg'>
+                        <img src='assets/images/galeria_3_3.jpg'>
+                    </div>
+                    <div class="linha">
+                        <img src='assets/images/galeria_3_4.jpg'>
+                        <img src='assets/images/galeria_3_5.jpg'>
+                    </div>
+                </div>
+            </div>
+
+            <div class="saiba_mais" onclick="show_more_3()">
+                <p id='botao_3'> Mostrar mais </p>
+                <i id='seta_3' class="fas fa-chevron-down"></i>
             </div>
         </div>
     </div>
@@ -140,4 +164,41 @@
             seta.className = "fas fa-chevron-down"
         }
     }
+
+    function show_more_2(){
+
+        var moretext = document.getElementById('galeria_2')
+        var botao = document.getElementById('botao_2')
+        var seta = document.getElementById('seta_2')
+
+        if(moretext.style.display === 'none'){
+            moretext.style.display = 'inline'
+            botao.innerHTML = "Mostrar menos"
+            seta.className = "fas fa-chevron-up"
+        }
+        else{
+            moretext.style.display = 'none'
+            botao.innerHTML = "Mostrar mais"
+            seta.className = "fas fa-chevron-down"
+        }
+    }
+
+    function show_more_3(){
+
+        var moretext = document.getElementById('galeria_3')
+        var botao = document.getElementById('botao_3')
+        var seta = document.getElementById('seta_3')
+
+        if(moretext.style.display === 'none'){
+            moretext.style.display = 'inline'
+            botao.innerHTML = "Mostrar menos"
+            seta.className = "fas fa-chevron-up"
+        }
+        else{
+            moretext.style.display = 'none'
+            botao.innerHTML = "Mostrar mais"
+            seta.className = "fas fa-chevron-down"
+        }
+    }
+
 </script>

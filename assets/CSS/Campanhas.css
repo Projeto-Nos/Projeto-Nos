@@ -239,6 +239,14 @@ header {
     display: none;
 }
 
+#galeria_2 {
+    display: none;
+}
+
+#galeria_3 {
+    display: none;
+}
+
 footer {
     width: 100%;
     display: flex;
