@@ -117,17 +117,17 @@ header {
 }
 
 .azul {
-    color: rgb(128, 128, 255);
+    color: rgb(137, 192, 231);
     border: 0.1em solid;
-    border-color: rgb(128, 128, 255);
-    box-shadow: 0em 0em 1.25em rgba(128, 128, 255, 1);
+    border-color: rgb(137, 192, 231);
+    box-shadow: 0em 0em 1.25em rgba(137, 192, 231, 1);
 }
 
 .amarelo {
-    color: rgb(179, 155, 14);
+    color:rgb(250, 203, 26);
     border: 0.1em solid;
-    border-color: rgb(179, 155, 14);
-    box-shadow: 0em 0em 1.25em rgba(179, 155, 14, 1);
+    border-color: rgb(250, 203, 26);
+    box-shadow: 0em 0em 1.25em rgba(250, 203, 26, 1);
     margin-bottom: 4em;
 }
 
@@ -141,18 +141,32 @@ header {
     font-size: 2.6em;
     padding: 0.7em 0.2em 0em 0;
     margin: 0;
-    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#laranja {
+    color: rgb(238, 95, 1);
+}
+
+#amarelo {
+    color: rgb(250, 203, 26);
+}
+
+#azul {
+    color:rgb(137, 192, 231)
 }
 
 .card .midia_texto img {
     border-radius: 0 4em;
-    width: 27%;
+    width: 30%;
+    border: 0.2em solid;
+
 }
 
 .card .midia_texto p {
     width: 60%;
-    font-size: 1.1em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-family: 'Anonymous Pro', monospace;
     text-align: justify;
     color: black;
 }
@@ -173,7 +187,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-top: 1.5em;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .card .saiba_mais:hover p {
@@ -198,6 +212,31 @@ header {
 
 .card .saiba_mais i {
     font-size: 4em;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3em;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 3em;
+}
+
+.galeria img {
+    width: 22.5%;
+    border: 0.2em solid
+}
+
+#galeria_1 {
+    display: none;
 }
 
 footer {

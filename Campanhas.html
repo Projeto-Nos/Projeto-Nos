@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cdd01f6b83.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="assets/CSS/icofont.css">
     <link rel='stylesheet' href="assets/CSS/icofont.min.css">
     <link rel="stylesheet" href="assets/CSS/Campanhas.css">                                                                                                                                                                                                                                                                                      
@@ -35,27 +37,49 @@
 <div id="interface">
     <div class="card_container">
         <div class="card laranja">
-            <h2> Cesta em Casa </h2>
+            <h2 id='laranja'> Cesta em Casa </h2>
+            <br>
             <div class="midia_texto">
                 <img src='assets/images/Cesta_Hero.jpg'>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod arcu eu molestie tincidunt. Suspendisse vel sapien ac felis ultrices pellentesque. Praesent fermentum augue metus, eu bibendum magna mattis ut. Nunc ut metus ac tellus mollis blandit. In id nisi ut eros efficitur volutpat iaculis non ligula. Nullam cursus sapien non imperdiet feugiat. Duis ut velit consectetur, suscipit diam non, sollicitudin turpis.
+                    A Campanha da Cesta em Casa é destinada a ajudar as famílias que estão em situação de vulnerabilidade financeira e social, nosso objetivo é de conseguir levar a esperança de dias melhores para essas pessoas.
                     <br><br>
-                    Donec quis lectus sed ex gravida tincidunt non et neque. Nullam vitae tempus lacus, nec pretium ligula. Pellentesque id lobortis sem, et porta massa. Phasellus ligula leo, aliquet quis nibh et, congue feugiat orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam sit amet enim tincidunt, aliquam lectus et, malesuada ligula. Morbi sit amet laoreet neque. Cras eget leo mi. Sed dapibus quam porta, elementum dui ac, condimentum lectus. Donec auctor tincidunt hendrerit. Aenean ut metus ex. Nulla facilisi. Quisque odio felis, egestas condimentum quam vitae, tempor ultrices leo. Aliquam erat volutpat. Ut ut feugiat nibh. Nulla vulputate magna non ex finibus mollis.
+                    Nessa campanha são entreges cestas básicas e leite para as famílias.
                     <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis, purus sit amet efficitur ultricies, ipsum nulla aliquam orci, sed convallis enim diam non libero. Ut nulla metus, laoreet id nisi at, lacinia pulvinar dolor. Pellentesque sapien felis, faucibus et velit vel, tempus ornare est. Praesent sit amet lacinia velit. Cras eu volutpat magna. Suspendisse quis hendrerit nisi. Nam sagittis diam vel orci malesuada rutrum. Suspendisse potenti. Mauris sit amet condimentum nibh. Fusce ac ullamcorper tellus, nec posuere dolor. In hac habitasse platea dictumst. Duis aliquet, nisi id porttitor eleifend, risus tellus ornare nibh, eget gravida metus quam in lacus. Donec eget efficitur quam.
+                    Todas essas famílias são triadas e cadastradas no projeto.
                 </p>
             </div>
-            <div class="saiba_mais" onclick="">
-                <p> Saiba mais </p>
-                <i class="fas fa-chevron-down"></i>
+
+            <div id="galeria_1">
+                <div class="galeria">
+                    <div class="linha">
+                        <img src='assets/images/galeria_1_1.jpg'>
+                        <img src='assets/images/galeria_1_2.jpg'>
+                        <img src='assets/images/galeria_1_3.jpg'>
+                    </div>
+                    <div class="linha">
+                        <img src='assets/images/galeria_1_4.jpg'>
+                        <img src='assets/images/galeria_1_5.jpg'>
+                        <img src='assets/images/galeria_1_6.jpg'>
+                    </div>
+                    <div class='linha'>
+                        <img src='assets/images/Cesta_Hero.jpg'>
+                        <img src='assets/images/Cesta_Hero.jpg'>
+                        <img src='assets/images/Cesta_Hero.jpg'>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="saiba_mais" onclick="show_more_1()">
+                <p id='botao_1'> Mostrar mais </p>
+                <i id='seta_1'class="fas fa-chevron-down"></i>
             </div>
         </div>
     </div>
 
     <div class="card_container">
         <div class="card azul">
-            <h2> Campanha de Natal </h2>
+            <h2 id='azul'> Campanha de Natal </h2>
             <div class="midia_texto">
                 <img src='assets/images/Natal_Hero.jpg'>
                 <p>
@@ -71,7 +95,7 @@
 
     <div class="card_container">
         <div class="card amarelo">
-            <h2> Campanha do Agasalho </h2>
+            <h2 id='amarelo'> Campanha do Agasalho </h2>
             <div class="midia_texto">
                 <img src='assets/images/Agasalho_Hero.jpg'>
                 <p>
@@ -97,3 +121,23 @@
 
 </body>
 </html>
+
+<script>
+    function show_more_1(){
+
+        var moretext = document.getElementById('galeria_1')
+        var botao = document.getElementById('botao_1')
+        var seta = document.getElementById('seta_1')
+        
+        if(moretext.style.display === 'none'){
+            moretext.style.display = 'inline'
+            botao.innerHTML = "Mostrar menos"
+            seta.className = "fas fa-chevron-up"
+        }
+        else{
+            moretext.style.display = 'none'
+            botao.innerHTML = "Mostrar mais"
+            seta.className = "fas fa-chevron-down"
+        }
+    }
+</script>
