@@ -103,7 +103,7 @@ header {
     margin: 0em 0em 1em 1em;
 }
 #Campanha-atual-imagem{
-    width: 90%;
+    width: 80%;
     border-radius: 0.5em;
 }
 button{
@@ -166,15 +166,15 @@ button:hover{
     width: 40%;
     font-size: 1.3em;
     text-align: justify;
-    text-indent: 2em;
 }
 
 #Quem-somos-titulo {
-    text-indent: -0.6em;
+    text-indent: 0em;
+    margin-bottom: 1.5em;
 }
 
 #Quem-somos-imagem{
-    width: 40em;
+    width: 30em;
     border-radius: 0.5em;
 }
 
