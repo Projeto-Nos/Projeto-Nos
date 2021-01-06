@@ -1,6 +1,6 @@
 /*Parte do header*/
 body {
-    font-family: 'Grandstander', cursive;
+    font-family: 'Anonymous Pro', monospace;
     background-color: rgb(137, 192, 231, 1);
 }
 
@@ -15,6 +15,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
+    font-family: 'Grandstander', cursive;
 }
 
 .menu {
@@ -99,11 +100,19 @@ header {
     text-align: justify;
     text-indent: 2em;
 }
+
+#texto3 h3 {
+    font-family: 'Bebas Neue', cursive;
+    text-indent: -0em;
+    font-size: 1.4em;
+}
 #Campanha-atual-titulo{
-    margin: 0em 0em 1em 1em;
+    margin: 0em 0em 0em 1em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
 }
 #Campanha-atual-imagem{
-    width: 90%;
+    width: 80%;
     border-radius: 0.5em;
 }
 button{
@@ -111,6 +120,7 @@ button{
     background-color: rgb(137, 192, 231, 1);
     border-radius: 1em;
     border-color:rgb(137, 192, 231, 1);
+    font-family: 'Bebas Neue', cursive;
 }
 button:hover{
     cursor: pointer;
@@ -123,28 +133,21 @@ button:hover{
     justify-content: space-evenly;
 }
 
-/*Frase da ONG*/
-.Frase-do-Projeto{
+/*Video depoimento*/
+.Frase-do-Video{
     background-color: white; 
     padding: 4em 0em 6em 0em;
     width: 100%;
+    font-family: 'Bebas Neue', cursive;
 }
-#Frase-ProjetoNos{
-    color:  rgb(246, 127, 23);
+#Frase-Video{
+    color:  black;
     padding: 0em;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
-    margin-bottom: 0em;
+    margin-bottom: 1.5em;
 }
 
-#Autor-da-Frase {
-    font-size: 2.5em;
-    color:  rgb(246, 127, 23);
-    text-align: end;
-    padding: 0em 2.7em 0em 0em;
-    margin-top: 0em;
-    margin-bottom: 4em;
-}
 .video{
     display: flex;
     justify-content: center;
@@ -166,15 +169,16 @@ button:hover{
     width: 40%;
     font-size: 1.3em;
     text-align: justify;
-    text-indent: 2em;
 }
 
 #Quem-somos-titulo {
-    text-indent: -0.6em;
+    text-indent: 0em;
+    margin-bottom: 1.5em;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #Quem-somos-imagem{
-    width: 40em;
+    width: 30em;
     border-radius: 0.5em;
 }
 
@@ -189,4 +193,3 @@ footer {
     background-color: white;
     height: 150px;
 }
-
